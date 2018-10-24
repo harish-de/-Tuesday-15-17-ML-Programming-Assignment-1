@@ -1,11 +1,9 @@
 import numpy as np
-import matplotlib.pyplot as plt
 import sys
-import csv
 
 
 def get_data():
-    my_data = np.genfromtxt('data.csv', delimiter=',')
+    my_data = np.genfromtxt(sys.argv[1], delimiter=',')
     X = my_data[:, 0:-1]
     ones = np.ones([X.shape[0], 1])
     X = np.concatenate((ones, X), 1)
@@ -14,5 +12,4 @@ def get_data():
 
 
 X, y = get_data()
-print(X[5][6])
-print(y[5])
+print(X)
