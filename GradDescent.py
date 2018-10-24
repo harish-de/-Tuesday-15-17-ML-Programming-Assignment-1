@@ -10,6 +10,13 @@ if __name__ == '__main__':
         y = my_data[:, -1].reshape(-1, 1)
         return X, y
 
+    def compute_cost(X, y, theta):
+        summation = ((X @ theta.T)-y) ** 2
+        return np.sum(summation)/(2 * len(X))
+
 
     X, y = get_data()
-    print(X)
+    alpha = sys.argv[2]
+    threshold = sys.argv[3]
+    print(compute_cost(X, y, np.zeros([1,X.shape[1]])))
+
