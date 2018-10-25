@@ -1,5 +1,6 @@
 import numpy as np
 import sys
+import csv
 
 if __name__ == '__main__':
     # function to get data from console
@@ -25,30 +26,32 @@ if __name__ == '__main__':
 
     # gradient descent
     def gradient_descent(X, y, theta, alpha, threshold):
-        i = 0
-        cost = np.zeros(1000000)
-        print(get_error(X, y, theta))
+        iter = 0
+        cost = np.zeros(27400)
+        #print(get_error(X, y, theta))
+        writer = csv.writer(open("results.csv", 'w'), newline = "")
         while True:
             temp = theta
             theta = theta - (alpha / len(X)) * (np.sum((X @ theta.T - y) * X, axis=0))
             cost = compute_cost(X, y, theta)
-            x = abs(abs(get_error(X, y, theta)) - abs(get_error(X, y, temp)))
-            #if i % 10 == 0:  # just look at cost every ten loops for debugging
-                #print(cost)
-            i += 1
-            if abs(get_error(X, y, theta)) - abs(get_error(X, y, temp)) <= threshold:
+            iter += 1
+            output_string_a = str(iter)
+            output_string_b = str(theta[0])
+            output_string_c = str(np.sum((X @ theta.T - y)**2))
+            writer.writerow([output_string_a + " "])
+            writer.writerow([output_string_b.replace("[","").replace("]","") + ","])
+            writer.writerow([output_string_c])
+            if float(get_error(X, y, theta) - get_error(X, y, temp )) <= threshold:
                 break
-        print(get_error(X, y, theta) - get_error(X, y, temp))
-        print()
-        print(i)
-        return theta, cost
+        print(output_string_a, output_string_b.replace("[","").replace("]",""), output_string_c)
+        return iter, theta, cost
 
 
     X, y = get_data()
     alpha = 0.0001  # float(sys.argv[2]) learning rate
     threshold = 0.0001  # float(sys.argv[3])
     theta = np.zeros([1, X.shape[1]])
-    g, cost = gradient_descent(X, y, theta, alpha, threshold)
-    print(g)
+    iter, g, cost = gradient_descent(X, y, theta, alpha, threshold)
+    #print(g)
     final_cost = compute_cost(X, y, g)
-    print(final_cost)
+    #print(final_cost)
