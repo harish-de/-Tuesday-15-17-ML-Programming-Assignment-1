@@ -19,21 +19,29 @@ if __name__ == '__main__':
         return np.sum(summation) / (2 * len(X))
 
 
+    def get_error(X,y,theta):
+        return np.sum(X @ theta.T - y)
+
+
     # gradient descent
-    def gradient_descent(X, y, theta_1, alpha, threshold):
+    def gradient_descent(X, y, theta, alpha, threshold):
         i = 0
-        cost = np.zeros(100000)
-        error = np.sum(X @ theta_1.T - y, axis=0)
-        print(error)
+        cost = np.zeros(1000000)
+        print(get_error(X, y, theta))
         while True:
-            theta_1 = theta_1 - alpha / len(X) * np.sum((X @ theta_1.T - y) * X, axis=0)
-            cost[i] = compute_cost(X, y, theta_1)
-            if np.sum((X @ theta_1.T - y), axis=0) - error <= threshold:
-                break
+            temp = theta
+            theta = theta - (alpha / len(X)) * (np.sum((X @ theta.T - y) * X, axis=0))
+            cost = compute_cost(X, y, theta)
+            x = abs(abs(get_error(X, y, theta)) - abs(get_error(X, y, temp)))
+            #if i % 10 == 0:  # just look at cost every ten loops for debugging
+                #print(cost)
             i += 1
-            print(cost[-1] , cost[-2])
+            if abs(get_error(X, y, theta)) - abs(get_error(X, y, temp)) <= threshold:
+                break
+        print(get_error(X, y, theta) - get_error(X, y, temp))
+        print()
         print(i)
-        return theta_1, cost
+        return theta, cost
 
 
     X, y = get_data()
