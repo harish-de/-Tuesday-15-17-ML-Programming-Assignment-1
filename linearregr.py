@@ -19,35 +19,33 @@ if __name__ == '__main__':
         return np.sum(summation) / (2 * len(X))
 
 
-    #error calculation
-    def get_error(X,y,theta):
-        return np.sum((X @ theta.T - y)**2)
+    # error calculation
+    def get_error(X, y, theta):
+        return np.sum((X @ theta.T - y) ** 2)
 
 
     # gradient descent
     def gradient_descent(X, y, theta, alpha, threshold):
         iter = 0
+        cost = []
         while True:
             temp = theta
-            error = ((alpha ) * (np.sum((X @ theta.T - y) * X, axis=0)))
+            error = ((alpha) * (np.sum((X @ theta.T - y) * X, axis=0)))
             theta = theta - error
-            cost = compute_cost(X, y, theta)
+            cost += compute_cost(X, y, theta)
             iter += 1
             next_theta = get_error(X, y, theta)
             now_theta = get_error(X, y, temp)
-            # ittheta = np.concatenate(([iter], theta[0]), 0)
-            # np.savetxt("results.csv", np.concatenate((ittheta,[np.sum((X @ theta.T - y) * X)]),0))
-            print(iter, theta[0], now_theta)
             if now_theta - next_theta <= threshold:
+                final_theta = theta
                 break
-        return iter, theta[0], now_theta
+        return iter, final_theta, now_theta
 
 
     X, y = get_data()
-    alpha = float(sys.argv[2]) # learning rate
-    threshold = float(sys.argv[3]) # threshold
+    alpha = float(sys.argv[2])  # learning rate
+    threshold = float(sys.argv[3])  # threshold
     theta = np.zeros([1, X.shape[1]])
     iter, g, error = gradient_descent(X, y, theta, alpha, threshold)
-    #print((iter), (theta[0]),error)
+    print((iter), g[0], error)
     final_cost = compute_cost(X, y, g)
-    #print(final_cost)
