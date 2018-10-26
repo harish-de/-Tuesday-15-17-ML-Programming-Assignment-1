@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f94d5568-7afd-4a36-9bb5-10fecc52e5c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/linearregr.py" beforeDir="false" afterPath="$PROJECT_DIR$/linearregr.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,14 +39,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="146" />
-          <entry key="py" value="4318" />
-          <entry key="txt" value="64" />
+          <entry key="py" value="4401" />
+          <entry key="txt" value="70" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="64" />
-          <entry key="Python" value="4464" />
+          <entry key="PLAIN_TEXT" value="70" />
+          <entry key="Python" value="4547" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -58,12 +57,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/linearregr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+            <state relative-caret-position="17">
+              <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <marker date="1540570989853" expanded="true" signature="565:616" ph="..." />
-                <marker date="1540570989853" expanded="true" signature="691:700" ph="..." />
+                <marker date="1540572895396" expanded="true" signature="568:621" ph="..." />
+                <marker date="1540572895396" expanded="true" signature="696:705" ph="..." />
               </folding>
             </state>
           </provider>
@@ -233,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540511252905</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="resolved while loop">
+      <created>1540571345550</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1540571345550</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -247,6 +253,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24330357" />
@@ -274,7 +281,8 @@
     <MESSAGE value="other inputs also taken into account" />
     <MESSAGE value="testing" />
     <MESSAGE value="resolved while loop" />
-    <option name="LAST_COMMIT_MESSAGE" value="resolved while loop" />
+    <MESSAGE value="final" />
+    <option name="LAST_COMMIT_MESSAGE" value="final" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -307,12 +315,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/linearregr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+        <state relative-caret-position="17">
+          <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1540570989853" expanded="true" signature="565:616" ph="..." />
-            <marker date="1540570989853" expanded="true" signature="691:700" ph="..." />
+            <marker date="1540572895396" expanded="true" signature="568:621" ph="..." />
+            <marker date="1540572895396" expanded="true" signature="696:705" ph="..." />
           </folding>
         </state>
       </provider>
