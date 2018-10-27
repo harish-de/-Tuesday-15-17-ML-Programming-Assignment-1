@@ -32,20 +32,25 @@ if __name__ == '__main__':
                                  + "_thres" + str(sys.argv[3]) + '.csv',"w", newline=""))
         while True:
             temp = theta
-            weight = [iter+1]
+            weight = [iter]
             for j in theta[0]:
                 weight .append(j)
             gradient = ((alpha) * (np.sum((X @ theta.T - y) * X, axis=0)))
             theta = theta - gradient
             cost += compute_cost(X, y, theta)
-            iter += 1
             next_theta = get_error(X, y, theta)
             now_theta = get_error(X, y, temp)
+            iter += 1
             weight.append(now_theta)
             writer.writerow(weight)
             if now_theta - next_theta <= threshold:
                 final_theta = theta
                 break
+        weight = [iter]
+        for j in theta[0]:
+            weight.append(j)
+        weight.append(now_theta)
+        writer.writerow(weight)
         return iter, final_theta, now_theta
 
 
