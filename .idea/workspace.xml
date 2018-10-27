@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f94d5568-7afd-4a36-9bb5-10fecc52e5c5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linearregr2.py" beforeDir="false" afterPath="$PROJECT_DIR$/linearregr2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linearregr.py" beforeDir="false" afterPath="$PROJECT_DIR$/linearregr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linearregr2.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,16 +16,16 @@
     <session id="-2100300029">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.116" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.26" value="1" />
-          <entry key="project.open.time.34" value="1" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.34" value="2" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -42,14 +43,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="146" />
-          <entry key="py" value="4975" />
-          <entry key="txt" value="128" />
+          <entry key="py" value="6081" />
+          <entry key="txt" value="139" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="128" />
-          <entry key="Python" value="5121" />
+          <entry key="PLAIN_TEXT" value="139" />
+          <entry key="Python" value="6227" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -58,10 +59,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/linearregr2.py">
+        <entry file="file://$PROJECT_DIR$/linearregr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="52" column="31" lean-forward="true" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+            <state relative-caret-position="373">
+              <caret line="99" column="39" lean-forward="true" selection-start-line="99" selection-start-column="39" selection-end-line="99" selection-end-column="39" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -91,9 +92,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/GradDescent.py" />
-        <option value="$PROJECT_DIR$/linearregr.py" />
         <option value="$PROJECT_DIR$/linearregr3.py" />
         <option value="$PROJECT_DIR$/linearregr2.py" />
+        <option value="$PROJECT_DIR$/linearregr.py" />
       </list>
     </option>
   </component>
@@ -108,6 +109,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -119,7 +121,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -197,7 +198,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/linearregr2.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Abhi\Documents\GitHub\-Tuesday-15-17-ML-Programming-Assignment-1\linearregr.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -302,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540576037947</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="minor mods">
+      <created>1540599284304</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1540599284304</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -346,7 +354,8 @@
     <MESSAGE value="final" />
     <MESSAGE value="final_commit" />
     <MESSAGE value="new .py file for exporting into .csv line" />
-    <option name="LAST_COMMIT_MESSAGE" value="new .py file for exporting into .csv line" />
+    <MESSAGE value="minor mods" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor mods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -382,21 +391,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/results_yacht.csv_alpha0.0001_thres0.01.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results_yacht.csv_alpha0.005_thres0.01.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/results_yacht.csv_alpha0.0001_thres0.01.csv" />
+    <entry file="file://$PROJECT_DIR$/results_yacht.csv_alpha0.005_thres0.01.csv" />
     <entry file="file://$PROJECT_DIR$/linearregr3.py" />
-    <entry file="file://$PROJECT_DIR$/linearregr2.py">
+    <entry file="file://$PROJECT_DIR$/linearregr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="52" column="31" lean-forward="true" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+        <state relative-caret-position="373">
+          <caret line="99" column="39" lean-forward="true" selection-start-line="99" selection-start-column="39" selection-end-line="99" selection-end-column="39" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
